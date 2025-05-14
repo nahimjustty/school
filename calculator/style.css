@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4a2658;
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #33213a; /* Very dark purple calculator body */
+    border-radius: 10px;
+    width: 670px;
+    overflow: hidden;
+}
+
+#history-display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+    color: #faecff; /* Light blue text for history */
+    background-color: #33213a; /* Darker purple for history background */
+    min-height: 20px;
+    border-radius: 34px;
+    overflow: hidden;
+
+}
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: #33213a;
+    border-radius: 15px;
+overflow: hidden;
+}
+
+#mode-selector {
+    display: flex;
+    padding: 5px 15px;
+    background-color: #4a2658;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 5px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #381c42;
+    color: white;
+    cursor: pointer;
+}
+
+.mode-btn.active {
+    background-color: #5e3166;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 15px;
+    background-color: #4a2658;
+}
+
+button {
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    background-color: #33213a;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #46375f;
+}
+
+button:active {
+    background-color: #5e35b1;
+}
+
+.number-btn {
+    background-color: #9575cd;
+}
+
+.operator-btn {
+    background-color: #38307a;
+}
+
+.operator-btn:hover {
+    background-color: #3b1658;
+}
+
+.operator-btn:active {
+    background-color: #0288d1;
+}
+
+.function-btn {
+    background-color: #483769;
+    font-size: 1rem;
+}
+
+.function-btn:hover {
+    background-color: #4a00c0;
+}
+
+.equals-btn {
+    background-color: #1976d2; 
+    grid-column: span 1;
+}
+.span-2 {
+    grid-column: span 2;
+}
+
