@@ -1,0 +1,177 @@
+body{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50; 
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.username-section,
+.account-details,
+.transaction-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.account-details {
+    background-color: #e8f5e9; 
+    border-color: #a5d6a7;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+
+input[type="text"] {
+    width: calc(100% - 20px); 
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+
+button {
+    background-color: #3498db; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#debitBtn {
+    background-color: #e74c3c;
+}
+
+#debitBtn:hover {
+    background-color: #c0392b;
+}
+
+#creditBtn {
+    background-color: #2ecc71;
+}
+
+#creditBtn:hover {
+    background-color: #27ae60;
+}
+
+.balance-display {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #d4edda; 
+    border-radius: 10px;
+    color: #155724; 
+    border: 1px solid #c3e6cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.balance-display span {
+    font-size: 1.2em; 
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message[style*="color: red"] {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message[style*="color: blue"] { 
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        width: calc(50% - 10px);
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .balance-display {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    button {
+        width: 100%; 
+        margin: 5px 0;
+    }
+}

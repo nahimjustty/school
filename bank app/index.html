@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Transaction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Bank Account</h1>
+
+        
+        <div class="username-section">
+            <label for="usernameInput">Enter Username:</label>
+            <input type="text" id="usernameInput" placeholder="e.g., JohnDoe">
+            <button id="createAccountBtn">Create Account</button>
+        </div>
+
+        <div class="account-details hidden">
+            <p>Hey <span id="displayUsername"></span></p>
+            <div class="balance-display">
+                Current Balance: $<span id="currentBalance">0.00</span>
+            </div>
+
+
+        <div class="transaction-section">
+            <h1>Make a Transaction</h1>
+
+            <input type="text" id="transactionAmount" placeholder="Enter amount">
+            <button id="debitBtn">Debit</button>
+            <button id="creditBtn">Credit</button>
+            <p id="message" class="message"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
