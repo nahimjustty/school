@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bank Transaction System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-    <div class="samesame"><h1>"I can’t believe how much has changed since we were last here. The old café on the corner is gone, replaced by a sleek new bookstore. Even the park looks different—the swings we used to love are now bright red instead of faded blue. It’s strange how time alters places, yet somehow, standing here still feels familiar, like the past is just beneath the surface."</h1></div>
-    <div class="samesame">
-        <div>"I can’t believe how much has changed since we were last . The old café on the corner is gone, replaced by a sleek new bookstore. Even the park looks different—the swings we used to love are now bright red instead of faded blue. It’s strange how time alters places, yet somehow, standing  still feels familiar, like the past is just beneath the surface."</div>
+    <div class="container">
+        <h1>My Bank Account</h1>
+
+        
+        <div class="username-section">
+            <label for="usernameInput">Enter Username:</label>
+            <input type="text" id="usernameInput" placeholder="e.g., JohnDoe">
+            <button id="createAccountBtn">Create Account</button>
+        </div>
+
+        <div class="account-details hidden">
+            <p>Hey <span id="displayUsername"></span></p>
+            <div class="balance-display">
+                Current Balance: $<span id="currentBalance">0.00</span>
+            </div>
+
+
+        <div class="transaction-section">
+            <h1>Make a Transaction</h1>
+
+            <input type="text" id="transactionAmount" placeholder="Enter amount">
+            <button id="debitBtn">Debit</button>
+            <button id="creditBtn">Credit</button>
+            <p id="message" class="message"></p>
+        </div>
+
     </div>
-</div>
-<div class="samesame"><p>"I can’t believe how much has changed since we were last here. The old café on the corner is gone, replaced by a sleek new bookstore. Even the park looks different—the swings we used to love are now bright red instead of faded blue. It’s strange how time alters places, yet somehow, standing here still feels familiar, like the past is just beneath the surface."</p></div>
-<div class="samesame"><span>"I can’t believe how much has changed since we were last here. The old café on the corner is gone, replaced by a sleek new bookstore. Even the park looks different—the swings we used to love are now bright red instead of faded blue. It’s strange how time alters places, yet somehow, standing here still feels familiar, like the past is just beneath the surface."</span></div>
+
     <script src="script.js"></script>
-    </body>
-    </html>
+</body>
+</html>
